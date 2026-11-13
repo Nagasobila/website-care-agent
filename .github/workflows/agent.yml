@@ -1,0 +1,31 @@
+name: Website Care Agent
+
+on:
+  schedule:
+    - cron: "17 6 * * 1,4"     # Mondays and Thursdays, ~6am UK
+  workflow_dispatch: {}         # "Run workflow" button
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pyyaml
+      - name: Find leads, build demos, draft pitches
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python agent/run.py
+      - name: Save results
+        run: |
+          git config user.name "website-care-agent"
+          git config user.email "agent@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Agent run $(date +%F)"
+          git push
