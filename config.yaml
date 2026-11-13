@@ -1,0 +1,40 @@
+# ============================================================
+#  Website Care Agent — settings (edit this file on GitHub)
+# ============================================================
+
+you:
+  name: Siva
+  business_name: "Siva Web Studio"        # change to your trading name
+  email: "hello@example.co.uk"            # your business email
+  phone: "07xxx xxxxxx"
+  site: "https://example.co.uk"           # your own domain, once bought
+
+# Where to hunt for businesses with no website.
+# Default: 3 km around Bayswater / Paddington.
+search:
+  lat: 51.5125
+  lon: -0.1830
+  radius_m: 3000
+  # OpenStreetMap tags to look for. key=value
+  categories:
+    - amenity=restaurant
+    - amenity=cafe
+    - amenity=fast_food
+    - shop=hairdresser
+    - shop=beauty
+    - shop=bakery
+    - shop=florist
+    - shop=tailor
+    - craft=plumber
+    - craft=electrician
+  new_leads_per_run: 5      # how many demo sites to build each run
+
+# Your offer (shown in outreach drafts)
+offer:
+  build_price: 149          # one-off, GBP
+  care_plan_monthly: 39     # hosting, updates, small edits, GBP/month
+  first_month_free: true
+
+ai:
+  groq_model: llama-3.3-70b-versatile
+  gemini_model: gemini-2.0-flash
