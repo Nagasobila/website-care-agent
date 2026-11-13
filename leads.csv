@@ -1,0 +1,6 @@
+id,slug,name,category,address,phone,email,lat,lon,found,demo_url,status,notes
+way/217965548,ping-pong-5548,Ping Pong,restaurant,29a James Street W1U 1DZ,+44 20 7035 3100,,51.5152902,-0.1508748,2026-11-13,https://nagasobila.github.io/website-care-agent/demos/ping-pong-5548/,new,
+node/4327351748,new-asia-1748,New Asia,restaurant,7 Hogarth Place SW5 0QY,+44 20 7373 0112,,51.4928108,-0.1929266,2026-11-13,https://nagasobila.github.io/website-care-agent/demos/new-asia-1748/,new,
+node/3357923673,beiteddine-3673,Beiteddine,restaurant,8 Harriet Street SW1X 9JR,+44 20 7235 3969,,51.5001764,-0.1592064,2026-11-13,https://nagasobila.github.io/website-care-agent/demos/beiteddine-3673/,new,
+node/7192415362,bird-blend-5362,Bird & Blend,cafe,158 Portobello Road W11 2EB,+44 20 7229 0101,,51.5152242,-0.2044593,2026-11-13,https://nagasobila.github.io/website-care-agent/demos/bird-blend-5362/,new,
+node/7142467327,cheeky-scone-7327,Cheeky Scone,cafe,43 Pembridge Road W11 3HG,+44 20 4568 3343,,51.5105482,-0.1975480,2026-11-13,https://nagasobila.github.io/website-care-agent/demos/cheeky-scone-7327/,new,
