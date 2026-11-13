@@ -36,5 +36,5 @@ offer:
   first_month_free: true
 
 ai:
-  groq_model: llama-3.3-70b-versatile
+  groq_model: openai/gpt-oss-120b    # Groq retired the Llama 3.3 model in Aug 2026
   gemini_model: gemini-2.0-flash
